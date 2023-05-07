@@ -1,0 +1,285 @@
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: "Inter";
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(images/scarface.png);
+  width: 100%;
+  height: 13rem;
+  position: relative;
+  margin: auto auto 25px auto;
+}
+
+h1 {
+  font-size: 43px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+p {
+  font-size: 14px;
+  color: #a5a5a5;
+}
+
+span {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+a {
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fff;
+}
+
+.search-bar {
+  display: flex;
+  width: 34.375rem;
+  justify-content: center;
+  position: absolute;
+  top: 11.87rem;
+}
+
+input,
+button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.search-input {
+  width: 21.375rem;
+  border-radius: 5px 0 0 5px;
+  border: none;
+  background-color: #2e2e2f;
+  color: #a5a5a5;
+  outline: none;
+}
+
+.search-btn {
+  width: 7.5rem;
+  border-radius: 0 5px 5px 0;
+  border: none;
+  background-color: #4b4b4b;
+  color: #fff;
+  cursor: pointer;
+}
+
+.background-img {
+  width: 34.375rem;
+  height: 35.68rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #2e2e2f;
+  font-weight: 700;
+  margin: auto;
+}
+
+.search-input::-webkit-input-placeholder {
+  font-family: FontAwesome;
+  font-weight: normal;
+  overflow: visible;
+  vertical-align: top;
+  display: inline-block !important;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+.movie-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 28.875rem;
+  border-bottom: 1.5px solid #2c2c2c;
+}
+
+.movie-img {
+  display: block;
+  width: 99px;
+  height: 147px;
+  margin-right: 1em;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.movie-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-title {
+  margin: 0;
+}
+
+.movie-rating {
+  font-weight: bold;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-runtime,
+.movie-genre {
+  margin-right: 1em;
+}
+
+.add-watchlist {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+
+.movie-plot {
+  margin: 0;
+  margin-top: 1em;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 200px auto;
+  max-width: 28.875rem;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Watchlist */
+
+.add-watchlist-btn {
+  color: black;
+  font-weight: 800;
+  background-color: #ffffff;
+  padding: 1px 4.5px;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+}
+
+.add-movies-container {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* Media query for screens with a minimum width of 768px and a maximum width of 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+    width: 100%;
+    height: 13rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  a {
+    font-size: 1.2rem;
+  }
+
+  .search-bar {
+    display: flex;
+    width: 34.375rem;
+    justify-content: center;
+    position: absolute;
+    top: 11.87rem;
+  }
+
+  .background-img {
+    width: 40rem;
+    height: 35.68rem;
+  }
+
+  .movie-container {
+    max-width: 80%;
+  }
+
+  .movie-img {
+    width: 90px;
+    height: 134px;
+  }
+}
+
+/* Media query for screens with a minimum width of 1024px */
+@media only screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+    height: 13rem;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  a {
+    font-size: 1.5rem;
+  }
+
+  .search-bar {
+    display: flex;
+    width: 34.375rem;
+    justify-content: center;
+    position: absolute;
+    top: 11.87rem;
+  }
+
+  .background-img {
+    width: 40rem;
+    height: 35.68rem;
+  }
+
+  .movie-container {
+    max-width: 50rem;
+  }
+
+  .movie-img {
+    width: 99px;
+    height: 147px;
+  }
+}

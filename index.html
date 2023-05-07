@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Search Movies</title>
+  <head>
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="index.js" defer></script>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Find your film</h1>
+      <a href="watchlist.html">My Watchlist</a>
+      <div class="search-bar">
+        <input
+          id="search-input"
+          class="search-input"
+          type="text"
+          placeholder="&#61442;"
+        />
+        <button id="search-btn" class="search-btn">Search</button>
+      </div>
+    </header>
+
+    <section id="results-container">
+      <div id="background-img" class="background-img">
+        <img src="images/film-icon.png" alt="Film icon" />
+        <p>Start exploring</p>
+      </div>
+    </section>
+  </body>
+</html>
